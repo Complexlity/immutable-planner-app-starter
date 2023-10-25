@@ -1,30 +1,18 @@
-import React, { useState } from "react";
+'use client'
 
-import ClockWidget from "./widgets/ClockWidget";
-import WidgetGalleryModal from "./modals/WidgetGalleryModal";
+import { useState } from "react";
 import Draggable from "react-draggable";
-import TimerWidget from "./widgets/TimerWidget";
-import CalendarWidget from "./widgets/CalendarWidget";
+import WidgetGalleryModal from "./modals/WidgetGalleryModal";
+import ImmutableWidget from './widgets/ImmutableWidget';
+
 
 function App() {
   const [widgets, setWidgets] = useState([
     {
-      id: new Date().getTime(),
-      component: <ClockWidget />,
-      area: "main-widget",
-      name: "Date and Time",
-    },
-    {
-      id: new Date().getTime() + 2,
-      component: <CalendarWidget />,
-      area: "right-widget",
-      name: "Calendar",
-    },
-    {
       id: new Date().getTime() + 1,
-      component: <TimerWidget />,
-      area: "left-widget",
-      name: "Timer",
+      component: <ImmutableWidget />,
+      area: "main-widget",
+      name: "Immutable",
     },
   ]);
   const [showWidgetModal, setShowWidgetModal] = useState(false);
@@ -84,7 +72,7 @@ function App() {
           widgets.map((widget, index) => {
             if (widget.area === "none-widget") {
               return (
-                <Draggable>
+                <Draggable key={widget.id}>
                   <div style={{ padding: 10 }} className="widget-container">
                     <div style={{ marginBottom: 10 }}>
                       <select
