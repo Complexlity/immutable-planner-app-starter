@@ -2,14 +2,18 @@
 
 import Head from "next/head";
 
-export default function NavButton() {
+
+export default function NavBar() {
+
 
   async function login() {
+    //Login Function Go Here
     return
   }
 
-  async function logout()  {
-
+  async function logout() {
+    // Logout Function Go Here
+    return
 }
 
 

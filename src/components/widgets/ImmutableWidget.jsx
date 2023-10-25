@@ -27,16 +27,9 @@ export default function ImmutableWidget() {
       <div
         className="tokens">
 
-        <details><summary className="cursor-pointer">Id Token</summary> <span className="italic">Id Token goes here</span></details>
+      {/* User Data Goes Here */}
 
-        <details><summary className="cursor-pointer">Access Token</summary><span className="italic">Access Token goes here</span></details>
-
-        <details><summary className="cursor-pointer">Refresh Token</summary><span className="italic">Refresh token goes here</span></details>
-
-        <form action="" className="flex gap-2" onSubmit={handleSubmit}>
-          <input type="number" placeholder="Enter order number" className='rounded-sm py-1 px-2 placeholder:text-gray-800 placeholder:italic'/>
-          <button type="submit" className="rounded-full px-3 py-1 bg-green-400 hover:bg-green-500">Create Trade</button>
-        </form>
+     {/* Rpc function go here */}
       </div>
     </div>
   );

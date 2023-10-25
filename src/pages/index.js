@@ -1,6 +1,6 @@
 import Head from "next/head";
 import InnerApp from "@/components/App";
-import NavButton from "@/components/widgets/NavButton";
+import NavBar from "@/components/widgets/NavBar";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="mainApp">
-        <NavButton />
+        <NavBar />
         <InnerApp />
       </div>
     </>
