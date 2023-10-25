@@ -4,7 +4,8 @@
 export default function ImmutableWidget() {
 
 // Create trade function goes here
-  function handleSubmit(){
+  function handleSubmit(e) {
+    e.preventDefault()
     return
   }
 
