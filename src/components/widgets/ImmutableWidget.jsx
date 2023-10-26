@@ -29,7 +29,7 @@ export default function ImmutableWidget() {
 
       {/* User Data Goes Here */}
 
-     {/* Rpc function go here */}
+     {/* Rpc functions go here */}
       </div>
     </div>
   );
