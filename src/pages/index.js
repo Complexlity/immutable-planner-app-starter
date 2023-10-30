@@ -1,6 +1,6 @@
 import Head from "next/head";
 import InnerApp from "@/components/App";
-import NavBar from "@/components/widgets/NavBar";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
